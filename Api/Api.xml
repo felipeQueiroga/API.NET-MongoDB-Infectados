@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="F:Api.Controllers.InfectadoController._mongoDB">
+            <summary>
+            Este serviço pertime a inserção e consulta de infectados 
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
