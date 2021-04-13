@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WebInfectado.Models.Infectado>
+
+@{
+    ViewData["Title"] = "Infectados";
+}
+
+<h1>Infectados</h1>
+
+<p>
+    <a asp-action="Create">Informar Infectado</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="display:none;">
+                <! -- display none para nao exibir o campo Id -->
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longitude)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td style="display:none;">
+                <! -- display none para nao exibir o campo Id -->
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longitude)
+            </td>
+            <td>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
