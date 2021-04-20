@@ -11,14 +11,8 @@ namespace WebInfectado.Services
     {
         private readonly InfectadoRepositorio _context;
 
-        public InfectadoService(InfectadoRepositorio context)
-        {
-            _context = context;
-        }
-
         public List<Infectado> ListarTodos()
         {
-
             var infectadosTask = _context.GetInfectadosAsync();
             List<Infectado> infectadosResult = new List<Infectado>();
 

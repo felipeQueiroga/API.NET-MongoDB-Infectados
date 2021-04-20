@@ -21,7 +21,7 @@ namespace WebInfectado
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<InfectadoService>();
+            //services.AddScoped<InfectadoService>();
 
         }
 

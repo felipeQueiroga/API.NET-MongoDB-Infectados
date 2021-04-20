@@ -18,6 +18,7 @@ namespace WebInfectado.Controllers
         public IActionResult Index()
         {
             var list = _infectadoService.ListarTodos();
+
             return View(list);
         }
 

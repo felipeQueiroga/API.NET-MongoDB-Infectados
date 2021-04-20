@@ -10,7 +10,7 @@ namespace WebInfectado.Models
 {
     public class Infectado
     {
-        public Infectado( DateTime dataNascimento, ESexo sexo, double latitude, double longitude)
+        public Infectado( DateTime dataNascimento, string sexo, double latitude, double longitude)
         {
             Id = 2;
             DataNascimento = dataNascimento;
@@ -22,7 +22,7 @@ namespace WebInfectado.Models
         public int Id { get; set; }
         [DisplayName("Data Nascimento")]
         public DateTime DataNascimento { get; set; }
-        public virtual ESexo Sexo { get; set; }
+        public string Sexo { get; set; }
         public double Latitude { get; set; }        
         public double Longitude { get; set; }
     }

@@ -21,7 +21,7 @@ namespace WebInfectado.repositories
 
         public async Task<List<Infectado>> GetInfectadosAsync()
         {
-            HttpResponseMessage response = await client.GetAsync("/Infectado");
+            HttpResponseMessage response = await client.GetAsync("api/Infectado");
             if (response.IsSuccessStatusCode)
             {
                 var dados = await response.Content.ReadAsStringAsync();
